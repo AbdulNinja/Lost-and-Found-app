@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "type": "lost",
+      "name": "Black backpack",
+      "category": "Bags",
+      "location": "Main library, 2nd floor",
+      "date": "2026-10-18",
+      "description": "Black backpack with a red keychain and a laptop sleeve inside.",
+      "contact": "0712 345 678",
+      "recovered": false,
+      "createdAt": "2026-10-18T09:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "type": "found",
+      "name": "Blue water bottle",
+      "category": "Other",
+      "location": "Sports hall",
+      "date": "2026-10-19",
+      "description": "Blue steel bottle with a university sticker on the side.",
+      "contact": "student.desk@example.com",
+      "recovered": false,
+      "createdAt": "2026-10-19T14:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "type": "lost",
+      "name": "Student ID card",
+      "category": "Documents",
+      "location": "Cafeteria",
+      "date": "2026-10-17",
+      "description": "ID card in a clear plastic holder, name starts with A.",
+      "contact": "0700 111 222",
+      "recovered": true,
+      "createdAt": "2026-10-17T12:00:00.000Z"
+    },
+    {
+      "type": "lost",
+      "name": "bag",
+      "category": "Bags",
+      "location": "Nairobi",
+      "date": "2026-09-28",
+      "description": "gucci yellow bag",
+      "contact": "abdullahisiyad328@gmail.com",
+      "recovered": false,
+      "createdAt": "2026-10-23T17:41:18.857Z",
+      "id": 4
+    }
+  ]
+}
