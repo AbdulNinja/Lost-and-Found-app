@@ -1,0 +1,21 @@
+
+{
+  "name": "lost-and-found",
+  "version": "1.0.0",
+  "description": "Lost & Found web app: report, search and manage lost and found items using a REST API (JSON Server).",
+  "type": "module",
+  "scripts": {
+    "api": "json-server --watch db.json --port 3000",
+    "api:prod": "json-server db.json --host 0.0.0.0 --port $PORT",
+    "web": "serve . -l 5500",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^5.0.5",
+    "json-server": "^0.17.4",
+    "serve": "^14.2.6",
+    "vitest": "^5.0.5"
+  }
+}
