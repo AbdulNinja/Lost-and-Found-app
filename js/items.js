@@ -1,4 +1,6 @@
-export const API_BASE_URL = "http://localhost:3000";
+// export const API_BASE_URL = "http://localhost:3000";
+
+export const API_BASE_URL = "https://lost-and-found-api.onrender.com";
 export const ITEMS_ENDPOINT = `${API_BASE_URL}/items`;
 
 
