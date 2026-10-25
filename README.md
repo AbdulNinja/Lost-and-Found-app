@@ -3,10 +3,11 @@
 A web app where people report lost or found belongings, search and filter listings, edit them, mark them as recovered, and delete them. Data is stored through a REST API (JSON Server), so it persists between reloads and is shared between users.
 
 Links:
-- **Live app:** https://YOUR-USERNAME.github.io/lost-and-found/
-- **Live API:** https://YOUR-API-NAME.onrender.com/items
-- **Figma wireframe:** (your design link)
-- **GitHub repository:** https://github.com/YOUR-USERNAME/lost-and-found
+- **Live app:** https://abdulninja.github.io/Lost-and-Found-app/
+- **Live API:** https://lost-and-found-app-4qaw.onrender.com/items 
+- **Figma wireframe:** (https://www.figma.com/proto/3XrjYdACGex34dOoE4zAhM/Abdul-project-PROTO?node-id=2-222&t=G0ThjfqALwYX5LO5-1&starting-point-node-id=2%3A222)
+
+- **GitHub repository:** https://github.com/AbdulNinja/Lost-and-Found-app
 
 ## Problem
 
@@ -52,13 +53,13 @@ lost-and-found/
 │   └── app.js          UI layer: page behaviour, form handling, rendering
 ├── tests/
 │   ├── items.test.js   14 unit tests for data layer
-│   └── app.test.js     42 unit tests for UI layer
+│   └── app.test.js     
 ├── vitest.config.js    test configuration
 ├── package.json        scripts and dependencies
 └── [docs]
     ├── README.md       (this file)
-    ├── GIT-WORKFLOW.md feature branches and PR cycle
-    └── LEARNING-GUIDE.md 13 lessons on the concepts
+    ├── GIT-WORKFLOW.md 
+    
 ```
 
 **How the modules connect:**
@@ -148,4 +149,4 @@ Note: on Render's free plan the API goes to sleep when idle, so the first reques
 
 ## License
 
-MIT. See [LICENSE](LICENSE) file.
+MIT. See [LICENSE] file.
