@@ -10,10 +10,8 @@ async function request(url, options = {}) {
     ...options,
   }); 
 
-
-
   if (!response.ok) {
-    throw new `Error(Request failed with status ${response.status})`;
+    throw new Error(`Request failed with status ${response.status}`);
   }
 
   const text = await response.text();
@@ -102,15 +100,17 @@ export function reportItem(data) {
 
 export function saveItemChanges(existing, data) {
   const updated = { ...existing, ...cleanFields(data) };
-  return request(`${ITEMS_ENDPOINT}/${existing.id}, { method: "PUT", body: JSON.stringify(updated) }`);
+  return request(`${ITEMS_ENDPOINT}/${existing.id}`, { method: "PUT", body: JSON.stringify(updated) });
 }
 
 
 export function markRecovered(id) {
-  return request(`${ITEMS_ENDPOINT}/${id}, { method: "PATCH", body: JSON.stringify({ recovered: true }) }`);
+  return request(`${ITEMS_ENDPOINT}/${id}`, { method: "PATCH", body: JSON.stringify({ recovered: true }) });
 }
 
 
 export function deleteItem(id) {
-  return request(`${ITEMS_ENDPOINT}/${id}, { method: "DELETE" }`);
+  return request(`${ITEMS_ENDPOINT}/${id}`, { 
+    method: "DELETE" 
+  });
 }
